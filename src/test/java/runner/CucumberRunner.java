@@ -17,7 +17,8 @@ import org.junit.runner.RunWith;
         ,snippets = CucumberOptions.SnippetType.CAMELCASE  // generates Camel Case Style Snippets
         ,plugin = {
                 "pretty",   //displays more detailed output on the console
-                "html:target/cucumber_built-in-report.html"   //generates built in html report at the given path
+                "html:target/cucumber_built-in-report.html",   //generates built in html report at the given path
+                "json:target/cucumber.json"
 }
 )
 

@@ -1,6 +1,7 @@
 
 Feature: As a user, I should be able to go to Mortgage Calculator Page on the website
 
+  @smoke
   Scenario: Go to Mortgage Calculator Page
     Given I am on the homepage
     Given I’m in a role of non-registered user
