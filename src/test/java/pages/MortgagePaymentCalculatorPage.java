@@ -29,7 +29,8 @@ public class MortgagePaymentCalculatorPage {
     @FindBy(id = "estimatemortgageCTA")
     public WebElement calculateButtonOfMortPayCal;
 
-    @FindBy(xpath = "//div//span[@class='dkblue']")
+ //   @FindBy(xpath = "//div//span[@class='dkblue']")
+    @FindBy(xpath = "//div//span[starts-with(text(),'$')][1]")
     public WebElement result;
 
     @FindBy(xpath = "//div//label[text()='ESTIMATED MONTHLY PRINCIPAL & INTEREST']")
@@ -37,6 +38,12 @@ public class MortgagePaymentCalculatorPage {
 
    @FindBy(xpath = "//div//canvas[@id='PITIChart']")
     public WebElement partialInfoResult;
+
+   @FindBy(xpath = "//div/h2[text()='Mortgage Payment Calculator']")
+    public WebElement titleMortgagePaymentCalculator;
+
+   @FindBy(xpath = "//div/span[text()='---']")
+    public WebElement noResultElement;
 
 
 
