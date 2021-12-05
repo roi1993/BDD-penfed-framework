@@ -26,4 +26,7 @@ public class HomePage {
     @FindBy(id = "toggle-search")
     public WebElement SearchBox;
 
+    @FindBy(id = "menu-search-input")
+    public WebElement SearchInput;
+
 }
