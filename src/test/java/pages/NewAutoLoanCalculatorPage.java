@@ -36,5 +36,8 @@ public class NewAutoLoanCalculatorPage {
     @FindBy(id = "Interest Rate id")
     public WebElement interestRate;
 
+    @FindBy(xpath = "//a[@class='active']")
+    public WebElement newCalculator;
+
 
 }
