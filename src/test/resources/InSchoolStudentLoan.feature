@@ -1,4 +1,4 @@
-@K
+@1
 Feature:  As a user, I want to be able to choose different student loan types, So that I can land on Ascent web page.
 
   Background:

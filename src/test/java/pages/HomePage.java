@@ -17,4 +17,13 @@ public class HomePage {
     @FindBy(linkText = "In-School Student Loans")
     public WebElement InSchoolStudentLoans;
 
+    @FindBy(xpath="//span[@data-id='Auto']")
+    public WebElement Auto;
+
+    @FindBy(xpath = "//a[@data-clickid='PF-BTN-CLK-AUTO-LOANS_REVIEW']")
+    public WebElement AutoLoanApplication;
+
+    @FindBy(id = "toggle-search")
+    public WebElement SearchBox;
+
 }
