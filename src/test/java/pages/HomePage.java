@@ -10,8 +10,11 @@ public class HomePage {
     public HomePage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
-    @FindBy
-    public WebElement example;
 
+    @FindBy(xpath = "//span[@data-id='Personal Loans']")
+    public WebElement Loans;
+
+    @FindBy(linkText = "In-School Student Loans")
+    public WebElement InSchoolStudentLoans;
 
 }
