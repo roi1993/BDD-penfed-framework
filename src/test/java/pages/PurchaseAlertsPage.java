@@ -16,5 +16,4 @@ public class PurchaseAlertsPage {
     @FindBy(xpath = "//a[@data-di-id='di-id-57dc8879-133be3b9']")
     public WebElement purchaseAlerts;
 
-
 }
