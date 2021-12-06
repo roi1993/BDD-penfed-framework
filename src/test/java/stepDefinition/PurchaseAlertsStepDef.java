@@ -15,4 +15,5 @@ public class PurchaseAlertsStepDef {
         purchaseAlertsPage.purchaseAlerts.click();
         Assert.assertEquals(Driver.getDriver().getTitle(),"VISA");
     }
+    //commit
 }
