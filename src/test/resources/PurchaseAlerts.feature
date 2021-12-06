@@ -10,3 +10,4 @@ Feature: I want to I want to verify PURCHASE ALERTS on Credit cards
     Then I should land on new priority pass website
 
 
+# should work
