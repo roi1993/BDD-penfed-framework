@@ -99,7 +99,7 @@
                         </goals>
 
                         <configuration>
-                            <projectName>PenFed App Automation Tests</projectName>
+                            <projectName>Ecommerce App Automation Tests</projectName>
 
                             <!-- output directory for the generated report -->
                             <outputDirectory>${project.build.directory}/pretty-html-report</outputDirectory>
@@ -116,10 +116,6 @@
             </plugin>
         </plugins>
     </build>
-
-
-
-
 
 
 

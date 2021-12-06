@@ -1,4 +1,4 @@
-@2
+@regression
 Feature: As a user, I want to be able to use search box, So that I can see all options
 
 Scenario: Use search box with different search conditions

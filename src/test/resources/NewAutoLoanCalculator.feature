@@ -1,4 +1,5 @@
-@3
+
+@regression
 Feature:As a user, I want to use a calculator for new auto loan, So that I can see estimated monthly payments
 
   Scenario:Fill out all information in New Auto Loan calculator,so that I can see estimated monthly payments
@@ -8,10 +9,8 @@ Feature:As a user, I want to use a calculator for new auto loan, So that I can s
     And I choose Auto Loan Application
     Then I should be able to fill out all information
 
-    |purchase price       |20000 |3000
-    |down payment         |2000  |3000
-    |trade-in value       |200   |300
-    |amount owed on trade |200   |300
+      |purchase price|down payment|trade-in value|amount owe on trade|
+      |20000         |2000        |200           |100                |
 
     Then I click on calculate button
     Then I should be able to see estimated monthly payments
