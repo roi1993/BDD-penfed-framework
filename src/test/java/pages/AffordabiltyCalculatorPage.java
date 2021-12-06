@@ -11,7 +11,7 @@ public class AffordabiltyCalculatorPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@data-di-id='#toggle-tab-1353052451-tab-2']")
+    @FindBy(id = "//li//a[@class='active']")
     public WebElement affordabilityTab;
 
     @FindBy(id = "afford-income")
@@ -31,6 +31,15 @@ public class AffordabiltyCalculatorPage {
 
     @FindBy(xpath = "//div//span[@class='ui-slider-handle ui-corner-all ui-state-default']")
     public WebElement slider;
+
+    @FindBy(xpath =" //div//h2[text()='Mortgage Affordability Calculator']")
+    public WebElement AffordabilityCalcPageTitle;
+
+    @FindBy(xpath = "//div//label[@class='pfui-affordability-total-home-cost-header']")
+    public WebElement resultVerifyingTitle;
+
+    @FindBy(className = "pfui-tooltip-label")
+    public WebElement annualIncomeLabel;
 
 
 
