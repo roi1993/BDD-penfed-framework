@@ -13,7 +13,7 @@ public class MoneyMarketSavingsCalculatorPage {
     @FindBy(xpath = "//a[@href='https://www.penfed.org/calculators/money-market-savings-calculator']")
     public WebElement moneyMarketSavingsCalculatorTab;
 
-    @FindBy(xpath = "//input[@id='#ct1_795946835_calcMMSA_txtAmount']")
+    @FindBy(xpath = "//div[@class='di']//input[@placeholder='5000']")
     public WebElement initialAmount;
 
     @FindBy(xpath = "//input[@id='#ct1_795946835_calcMMSA_txtAdditions']")

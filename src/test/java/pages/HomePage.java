@@ -36,10 +36,7 @@ public class HomePage {
     public WebElement calculatorTab;
 
 
-    public void NavigateToCalculatorsPage() {
-        learnTab.click();
-        calculatorTab.click();
 
-    }
+
 
 }
