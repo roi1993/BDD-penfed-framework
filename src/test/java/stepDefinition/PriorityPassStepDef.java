@@ -28,6 +28,7 @@ public class PriorityPassStepDef {
 
     @Given("I click on  the link below Pathfinder-Priority Pass")
     public void iClickOnTheLinkBelowPathfinderPriorityPass() {
+
         priorityPassPage.priorityPass.click();
     }
 
@@ -36,5 +37,6 @@ public class PriorityPassStepDef {
         priorityPassPage.continueButton.click();
         Assert.assertEquals(Driver.getDriver().getTitle(), "PRIORITY PASS");
     }
+    //it was supposed to be pushed a few hours ago
 
 }
