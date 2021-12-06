@@ -37,6 +37,6 @@ public class PriorityPassStepDef {
         priorityPassPage.continueButton.click();
         Assert.assertEquals(Driver.getDriver().getTitle(), "PRIORITY PASS");
     }
-    //it was supposed to be pushed a few hours ago
+    //it was supposed to be pushed a few hours ago. Second attempt
 
 }
