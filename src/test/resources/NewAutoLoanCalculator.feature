@@ -1,5 +1,5 @@
 
-@3
+@regression
 Feature:As a user, I want to use a calculator for new auto loan, So that I can see estimated monthly payments
 
   Scenario:Fill out all information in New Auto Loan calculator,so that I can see estimated monthly payments

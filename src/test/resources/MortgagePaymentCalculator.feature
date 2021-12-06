@@ -1,4 +1,4 @@
-
+@regression
 Feature: As a non-registered user, I should be able to access mortgage calculator and check estimated monthly principal and interest payment
 
  Background:
