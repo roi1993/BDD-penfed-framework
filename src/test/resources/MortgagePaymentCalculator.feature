@@ -25,7 +25,7 @@ Feature: As a non-registered user, I should be able to access mortgage calculato
  by leaving PRICE OF THE HOME field with default amount $0.00
 
   When I go to Mortgage Payment Calculator
-  Then I fill out all the required field but leave PRICE OF THE HOME field with default amount $0.00
+  Then I fill out all the required field but leave PRICE OF THE HOME field with default amount of $0.00
   Then I click on Calculate
   Then I should not be able to calculate estimated monthly mortgage principal and interest payment
 
