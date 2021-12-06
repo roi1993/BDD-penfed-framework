@@ -29,4 +29,7 @@ public class HomePage {
     @FindBy(id = "menu-search-input")
     public WebElement SearchInput;
 
+    @FindBy(xpath = "//span[@data-id='Cards']")
+    public WebElement CreditCards;
+
 }
