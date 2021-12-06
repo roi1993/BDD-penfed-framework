@@ -4,6 +4,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.Select;
 import pages.AffordabiltyCalculatorPage;
@@ -17,7 +19,10 @@ public class AffordabilityCalculatorStepDef {
     @Then("I click on Affordability Calculator")
     public void i_click_on_affordability_calculator() {
         AffordabiltyCalculatorPage affordabiltyCalculatorPage = new AffordabiltyCalculatorPage();
-        affordabiltyCalculatorPage.affordabilityTab.click();
+        Actions act = new Actions(Driver.getDriver());
+        act.moveToElement(affordabiltyCalculatorPage.affordabilityTab).build().perform();
+        act.moveToElement(affordabiltyCalculatorPage.affordabilityTab).click();
+ //       affordabiltyCalculatorPage.affordabilityTab.click();
 
     }
     @Then("I should land on Affordability Calculator Page")
