@@ -1,4 +1,4 @@
-@Z
+@regression
 Feature: As a user, I should be able to arrive on the Money Market Savings Calculator page,
   so that i can use a calculator to see my savings.
 

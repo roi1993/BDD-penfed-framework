@@ -89,7 +89,7 @@ public class MortgagePaymentCalculatorStepDef {
 //    public void iGoToMortgagePaymentCalculator() {
 //
 //    }
-    @Then("I fill out all the required field but leave PRICE OF THE HOME field with default amount ${double}")
+    @Then("I fill out all the required field but leave PRICE OF THE HOME field with default amount of ${double}")
     public void iFillOutAllTheRequiredFieldButLeavePRICEOFTHEHOMEFieldWithDefaultAmount$(Double double1) {
         MortgagePaymentCalculatorPage mortgagePaymentCalculatorPage = new MortgagePaymentCalculatorPage();
         mortgagePaymentCalculatorPage.priceOfTheHomeOfMortPayCal.clear();

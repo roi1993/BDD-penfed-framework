@@ -1,4 +1,4 @@
-@K
+@regression
 Feature: I want to verify PRIORITY PASS page on Credit Cards.
 
   Scenario: : I am hovering on Credit Cards, selecting CONTACT US
