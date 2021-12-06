@@ -22,4 +22,6 @@ public class PriorityPassPage {
 
     @FindBy(id = "continue")
     public WebElement continueButton;
+
+    //first draft
 }
