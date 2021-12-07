@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.PenFedTitlePage;
 import utilities.Driver;
+import utilities.SeleniumUtils;
 
 public class PenFedTitleLLCStepDef {
     PenFedTitlePage penFedTitlePage = new PenFedTitlePage();
@@ -14,6 +15,9 @@ public class PenFedTitleLLCStepDef {
 
         penFedTitlePage.PenFedTittleLLC.click();
         penFedTitlePage.continueButton.click();
+        String expected = "PenFed Title - Home";
+        SeleniumUtils seleniumUtils = new SeleniumUtils();
+        seleniumUtils.switchToWindow(expected);
     }
 
     @Then("I should land on PenFed Title Website on different browser tab")

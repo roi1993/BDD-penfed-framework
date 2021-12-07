@@ -11,7 +11,7 @@ public class AffordabiltyCalculatorPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "//li/a[@href='#'][@id='toggle-tab-1503878586-tab-2']")
+    @FindBy(xpath = "//li/a[text()='Affordability Calculator']")
     public WebElement affordabilityTab;
 
     @FindBy(id = "afford-income")

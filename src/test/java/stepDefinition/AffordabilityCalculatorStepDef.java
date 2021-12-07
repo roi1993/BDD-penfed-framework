@@ -2,6 +2,7 @@ package stepDefinition;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.eo.Se;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Action;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.Select;
 import pages.AffordabiltyCalculatorPage;
 import utilities.Driver;
+import utilities.SeleniumUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -19,10 +21,9 @@ public class AffordabilityCalculatorStepDef {
     @Then("I click on Affordability Calculator")
     public void i_click_on_affordability_calculator() {
         AffordabiltyCalculatorPage affordabiltyCalculatorPage = new AffordabiltyCalculatorPage();
-        Actions act = new Actions(Driver.getDriver());
-        act.moveToElement(affordabiltyCalculatorPage.affordabilityTab).build().perform();
-        act.moveToElement(affordabiltyCalculatorPage.affordabilityTab).click();
- //       affordabiltyCalculatorPage.affordabilityTab.click();
+        SeleniumUtils utils = new SeleniumUtils();
+        utils.jsClick(affordabiltyCalculatorPage.affordabilityTab);
+
 
     }
     @Then("I should land on Affordability Calculator Page")
@@ -38,7 +39,8 @@ public class AffordabilityCalculatorStepDef {
     @When("I go to Affordability Calculator")
     public void i_go_to_affordability_calculator() {
         AffordabiltyCalculatorPage affordabiltyCalculatorPage = new AffordabiltyCalculatorPage();
-        affordabiltyCalculatorPage.affordabilityTab.click();
+        SeleniumUtils utils = new SeleniumUtils();
+        utils.jsClick(affordabiltyCalculatorPage.affordabilityTab);
 
     }
     @Then("I fill in the required fields")

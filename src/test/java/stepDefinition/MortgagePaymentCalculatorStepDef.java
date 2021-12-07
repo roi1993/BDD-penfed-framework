@@ -3,6 +3,7 @@ package stepDefinition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
@@ -66,6 +67,7 @@ public class MortgagePaymentCalculatorStepDef {
         Select loanTerm = new Select(mortgagePaymentCalculatorPage.loanTermOfMortPayCal);
         loanTerm.selectByValue("180");
         mortgagePaymentCalculatorPage.interestRateOfMortPayCal.sendKeys("3.5");
+
 
     }
     @Then("I click on Calculate")
